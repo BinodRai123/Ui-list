@@ -4,29 +4,33 @@ const Description = document.querySelectorAll('[role = "skill-description"]');
 
 const changePanel = (data) => {
     const TargetTab = data.target;
+    const TargetTabAriaControl = TargetTab.getAttribute('aria-controls')
     const TargetCard = data.target.closest('.card');
     const TabParent = TargetTab.parentNode;
 
-    //selecting the hidden and visible things
-    const TargetVisiblePanel = TargetCard.querySelectorAll('[aria-hidden="false"]');
-    const TargetInvisiblePanel = TargetCard.querySelectorAll('[aria-hidden="true"]');
+    //selecting All Panel and Target Panel
+    const TargetAllPanel = TargetCard.querySelectorAll('[role]');
+    const TargetPanel = TargetCard.querySelectorAll(`[role = "${TargetTabAriaControl}"]`);
+
     
     //changing the Tablist dot color
     TabParent.querySelector('[aria-selected="true"]').setAttribute("aria-selected","false")
     TargetTab.setAttribute("aria-selected","true");
 
-    TargetVisiblePanel.forEach(visiblePanel => {
-        visiblePanel.setAttribute("aria-hidden","true");
-        visiblePanel.style.display = 'none';
-    })
+    //It first Hide all the Panel and Render only the Targeted Panel
+    HideShowPanel(TargetAllPanel, "none");
+    HideShowPanel(TargetPanel, "flex")
 
-    TargetInvisiblePanel.forEach(invisiblePanel => {
-        invisiblePanel.setAttribute("aria-hidden","false");
-        invisiblePanel.style.display = 'flex';
-    })
+}
 
+//Function to Hide and Showing Panel 
+const HideShowPanel = (panel, display) => {
+    panel.forEach(e => {
+        e.style.display = display;
+    })
 }
 
 Tabs.forEach((tab) =>
     tab.addEventListener("click", changePanel)
 )
+
