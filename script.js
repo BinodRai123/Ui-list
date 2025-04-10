@@ -1,5 +1,6 @@
-const data = localStorage.getItem("users");
-const users = JSON.parse(data);
+// const data = localStorage.getItem("users");
+// const users = JSON.parse(data);
+import users from "/assests/Data/data.js";
 const Main = document.querySelector("main");
 let content = '';
 
@@ -56,7 +57,7 @@ users.forEach((data) => {
                     </div>
                
                     <div role="skill-description" class="skill-description" aria-hidden="true">
-                        <p class="dark-font" style="--dark-font: .87rem">Lorem ipsum dolor sit amet consectetur,us perspiciatis expedita quas.</p>
+                        <p class="dark-font" style="--dark-font: .87rem">${data.skill}</p>
                     </div>
                     
                 </div>  
@@ -74,7 +75,7 @@ users.forEach((data) => {
                     <p class="dark-font">
                         Friend Since:
                     </p>
-                    <p><b>December 2014</b></p>
+                    <p><b>${data.since}</b></p>
                 </div>
 
                 <div class="tab-list" style="--gap: .5em;">
