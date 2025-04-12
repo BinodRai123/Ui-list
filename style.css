@@ -109,11 +109,14 @@ main {
   width: 15rem;
   margin-bottom: 1.5rem;
   background-color: white;
+  border-radius: var(--border-radius, 10px);
   box-shadow: 0 10px 6px -1px rgba(0, 0, 0, 0.1), 0 6px 4px -1px rgba(0, 0, 0, 0.107);
 }
 .card .background-image img {
   height: 110px;
   width: 100%;
+  border-top-left-radius: var(--border-radius, 10px);
+  border-top-right-radius: var(--border-radius, 10px);
 }
 .card .profile-data {
   position: relative;
