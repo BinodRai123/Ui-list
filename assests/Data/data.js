@@ -5,8 +5,14 @@ const users = [
     skill: "I am a software engineer who builds scalable and efficient backend systems.",
     since: "December 10",
     image: {
-      backgroundImage: "assests/backgroundImages/background1.avif",
-      profileImage: "assests/profileImages/profile1.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background1.avif",
+        webp: "assests/backgroundNewImages/background1.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile1.avif",
+        webp: "assests/profileNewImages/profile1.webp"
+      }
     },
     status: {
       friends: 120,
@@ -20,8 +26,14 @@ const users = [
     skill: "I am a data analyst turning complex data into clear business decisions.",
     since: "January 5",
     image: {
-      backgroundImage: "assests/backgroundImages/background2.avif",
-      profileImage: "assests/profileImages/profile2.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background2.avif",
+        webp: "assests/backgroundNewImages/background2.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile2.avif",
+        webp: "assests/profileNewImages/profile2.webp"
+      }
     },
     status: {
       friends: 180,
@@ -35,8 +47,14 @@ const users = [
     skill: "I am a frontend developer crafting beautiful user interfaces using React and Tailwind.",
     since: "February 22",
     image: {
-      backgroundImage: "assests/backgroundImages/background3.avif",
-      profileImage: "assests/profileImages/profile3.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background3.avif",
+        webp: "assests/backgroundNewImages/background3.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile3.avif",
+        webp: "assests/profileNewImages/profile3.webp"
+      }
     },
     status: {
       friends: 250,
@@ -50,8 +68,14 @@ const users = [
     skill: "I am a backend engineer building APIs and managing secure application databases daily.",
     since: "March 12",
     image: {
-      backgroundImage: "assests/backgroundImages/background4.avif",
-      profileImage: "assests/profileImages/profile4.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background4.avif",
+        webp: "assests/backgroundNewImages/background4.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile4.avif",
+        webp: "assests/profileNewImages/profile4.webp"
+      }
     },
     status: {
       friends: 200,
@@ -65,8 +89,14 @@ const users = [
     skill: "I am a full-stack developer building complete web apps using modern technologies.",
     since: "April 3",
     image: {
-      backgroundImage: "assests/backgroundImages/background5.avif",
-      profileImage: "assests/profileImages/profile5.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background5.avif",
+        webp: "assests/backgroundNewImages/background5.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile5.avif",
+        webp: "assests/profileNewImages/profile5.webp"
+      }
     },
     status: {
       friends: 95,
@@ -80,8 +110,14 @@ const users = [
     skill: "I am a game developer focused on gameplay and immersive digital storytelling experiences.",
     since: "May 17",
     image: {
-      backgroundImage: "assests/backgroundImages/background6.avif",
-      profileImage: " assests/profileImages/profile6.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background6.avif",
+        webp: "assests/backgroundNewImages/background6.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile6.avif",
+        webp: "assests/profileNewImages/profile6.webp"
+      }
     },
     status: {
       friends: 350,
@@ -95,8 +131,14 @@ const users = [
     skill: "I am a mobile developer creating smooth, cross-platform apps with Flutter and Dart.",
     since: "June 9",
     image: {
-      backgroundImage: "assests/backgroundImages/background7.avif",
-      profileImage: "assests/profileImages/profile7.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background7.avif",
+        webp: "assests/backgroundNewImages/background7.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile7.avif",
+        webp: "assests/profileNewImages/profile7.webp"
+      }
     },
     status: {
       friends: 220,
@@ -110,8 +152,14 @@ const users = [
     skill: "I am a cloud engineer working on scalable systems with AWS and containers.",
     since: "July 28",
     image: {
-      backgroundImage: "assests/backgroundImages/background8.avif",
-      profileImage: "assests/profileImages/profile8.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background8.avif",
+        webp: "assests/backgroundNewImages/background8.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile8.avif",
+        webp: "assests/profileNewImages/profile8.webp"
+      }
     },
     status: {
       friends: 500,
@@ -125,8 +173,14 @@ const users = [
     skill: "I am a machine learning engineer building predictive models with real-world business value.",
     since: "August 14",
     image: {
-      backgroundImage: "assests/backgroundImages/background9.avif",
-      profileImage: "assests/profileImages/profile9.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background9.avif",
+        webp: "assests/backgroundNewImages/background9.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile9.avif",
+        webp: "assests/profileNewImages/profile9.webp"
+      }
     },
     status: {
       friends: 130,
@@ -140,8 +194,14 @@ const users = [
     skill: "I am a DevOps engineer automating workflows and deploying apps with speed and reliability.",
     since: "September 30",
     image: {
-      backgroundImage: "assests/backgroundImages/background10.avif",
-      profileImage: "assests/profileImages/profile10.avif"
+      backgroundImage: {
+        avif: "assests/backgroundNewImages/background10.avif",
+        webp: "assests/backgroundNewImages/background10.webp"
+      },
+      profileImage: {
+        avif: "assests/profileNewImages/profile10.avif",
+        webp: "assests/profileNewImages/profile10.webp"
+      }
     },
     status: {
       friends: 220,

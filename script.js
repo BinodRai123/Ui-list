@@ -21,13 +21,20 @@ function escapeHTML(str) {
 users.forEach((data) => {
     content += `
       <div class="card">
-            <div class="background-image">
-                <img src=${data.image.backgroundImage} alt="" loading="lazy">
-            </div>
+            <picture class="background-image">
+                    <source srcset=${data.image.backgroundImage.avif} type="image/avif"/>
+                    <source srcset=${data.image.backgroundImage.webp} type="image/webp"/>
+                    <img src=${data.image.backgroundImage.webp} alt="Soniya's profile photo" loading="lazy" />
+            </picture>
+            
 
             <div class="profile-data">
                 <div class="img">
-                    <img src=${data.image.profileImage} alt="" loading="lazy">
+                    <picture>
+                        <source srcset=${data.image.profileImage.avif} type="image/avif"/>
+                        <source srcset=${data.image.profileImage.webp} type="image/webp"/>
+                        <img src=${data.image.profileImage.webp} alt="Soniya's profile photo" loading="lazy" />
+                    </picture>
                     
                     <div class="header-title" style="opacity: .8;">
                         <h1>
