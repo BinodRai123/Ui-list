@@ -21,6 +21,8 @@ const changePanel = (data) => {
     HideShowPanel(TargetAllPanel, "none");
     HideShowPanel(TargetPanel, "flex")
 
+    return 0;
+
 }
 
 //Function to Hide and Showing Panel 

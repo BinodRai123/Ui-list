@@ -63,12 +63,39 @@ summary,
   margin-bottom: 1.5em;
 }
 
+.disappear {
+  display: none;
+}
+
 .dark-font {
   opacity: 0.5;
   font-size: var(--dark-font, 0.75rem);
   line-height: 1.5;
 }
 
+/*-----------------------*/
+/*navbar*/
+/*-----------------------*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em 5em;
+  height: 2.5rem;
+}
+nav .light-mode {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+nav .dark-mode {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/*-----------------------*/
+/*Main-bar*/
+/*-----------------------*/
 main {
   display: grid;
   gap: 1.5em;
