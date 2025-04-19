@@ -1,18 +1,22 @@
 const Tabs = document.querySelectorAll('.tab-list_dot');
-const PostStatus = document.querySelectorAll('[role = "post-status"]');
-const Description = document.querySelectorAll('[role = "skill-description"]');
+// const PostStatus = document.querySelectorAll('[role = "post-status"]');
+// const Description = document.querySelectorAll('[role = "skill-description"]');
 
-const changePanel = (data) => {
-    const TargetTab = data.target;
+
+Tabs.forEach((tab) =>
+    tab.addEventListener("click", changePanel)
+)
+
+function changePanel(details) {
+    const TargetTab = details.target;
     const TargetTabAriaControl = TargetTab.getAttribute('aria-controls')
-    const TargetCard = data.target.closest('.card');
+    const TargetCard = details.target.closest('.card');
     const TabParent = TargetTab.parentNode;
 
     //selecting All Panel and Target Panel
     const TargetAllPanel = TargetCard.querySelectorAll('[role]');
     const TargetPanel = TargetCard.querySelectorAll(`[role = "${TargetTabAriaControl}"]`);
 
-    
     //changing the Tablist dot color
     TabParent.querySelector('[aria-selected="true"]').setAttribute("aria-selected","false")
     TargetTab.setAttribute("aria-selected","true");
@@ -31,8 +35,3 @@ const HideShowPanel = (panel, display) => {
         e.style.display = display;
     })
 }
-
-Tabs.forEach((tab) =>
-    tab.addEventListener("click", changePanel)
-)
-

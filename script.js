@@ -1,5 +1,6 @@
 // const data = localStorage.getItem("users");
 // const users = JSON.parse(data);
+
 import users from "/assests/Data/data.js";
 const Main = document.querySelector("main");
 let content = '';
@@ -21,7 +22,9 @@ function escapeHTML(str) {
 users.forEach((data) => {
     content += `
       <div class="card">
-            <picture class="background-image">
+            <picture class="background-image delete">
+                    <div class="delete-sign"></div>
+
                     <source srcset=${data.image.backgroundImage.avif} type="image/avif"/>
                     <source srcset=${data.image.backgroundImage.webp} type="image/webp"/>
                     <img src=${data.image.backgroundImage.webp} alt="Soniya's profile photo" loading="lazy" />
@@ -98,3 +101,5 @@ users.forEach((data) => {
 })
 
 Main.innerHTML = content;
+
+export default Main;

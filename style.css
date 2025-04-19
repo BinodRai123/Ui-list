@@ -112,6 +112,17 @@ main {
   border-radius: var(--border-radius, 10px);
   box-shadow: 0 10px 6px -1px rgba(0, 0, 0, 0.1), 0 6px 4px -1px rgba(0, 0, 0, 0.107);
 }
+.card .background-image {
+  position: relative;
+}
+.card .background-image .delete-sign {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+}
 .card .background-image img {
   height: 110px;
   width: 100%;
@@ -161,15 +172,12 @@ main {
   background-color: rgb(17, 240, 199);
 }
 .card .profile-data .tab-list ul .tab-list_dot {
-  height: 10px;
-  width: 10px;
+  height: 0.79rem;
+  width: 0.79rem;
   border-radius: 50%;
   background-color: hsl(0, 0%, 80%);
   transition: all ease 0.15s;
   cursor: pointer;
-}
-.card .profile-data .tab-list ul .tab-list_dot:focus {
-  background-color: red;
 }
 .card .profile-data .tab-list ul .tab-list_dot:hover {
   background-color: hsl(0, 100%, 80%);
@@ -199,35 +207,6 @@ main {
   aspect-ratio: 1/1;
   border-radius: 50%;
   width: 40%;
-}
-
-.skeleton-container {
-  display: flex;
-  gap: 10px;
-}
-
-.skeleton-item {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-  background-size: 200% 100%;
-  animation: skeleton-loading 1.5s infinite linear;
-}
-
-@keyframes skeleton-loading {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-.real-image {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: opacity 0.3s ease;
 }
 
 /*------------------------*/
