@@ -7,7 +7,11 @@ const deleting = (details) => {
     const TargetCard = TargetSign.closest('.card');
 
    // Removing from screen
-   Main.removeChild(TargetCard);
+   TargetCard.style.transform = 'scale(0.8)';
+   TargetCard.style.opacity = 0;
+   setTimeout(() => {
+        Main.removeChild(TargetCard);
+   }, 250);
 }
 
 DeleteSigns.forEach((deleteSign) => deleteSign.addEventListener("click", deleting))

@@ -111,17 +111,20 @@ main {
   background-color: white;
   border-radius: var(--border-radius, 10px);
   box-shadow: 0 10px 6px -1px rgba(0, 0, 0, 0.1), 0 6px 4px -1px rgba(0, 0, 0, 0.107);
+  transition: all linear 0.2s;
 }
 .card .background-image {
   position: relative;
 }
 .card .background-image .delete-sign {
   position: absolute;
-  top: 1em;
-  right: 1em;
-  height: 20px;
-  width: 20px;
-  background-color: red;
+  top: 0.2em;
+  right: 0.3em;
+  font-size: 2rem;
+  transform: scale();
+  color: white;
+  mix-blend-mode: difference;
+  cursor: pointer;
 }
 .card .background-image img {
   height: 110px;

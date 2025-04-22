@@ -1,7 +1,4 @@
 const Tabs = document.querySelectorAll('.tab-list_dot');
-// const PostStatus = document.querySelectorAll('[role = "post-status"]');
-// const Description = document.querySelectorAll('[role = "skill-description"]');
-
 
 Tabs.forEach((tab) =>
     tab.addEventListener("click", changePanel)
@@ -13,7 +10,7 @@ function changePanel(details) {
     const TargetCard = details.target.closest('.card');
     const TabParent = TargetTab.parentNode;
 
-    //selecting All Panel and Target Panel
+    //selecting All Panel and Targeted Panel
     const TargetAllPanel = TargetCard.querySelectorAll('[role]');
     const TargetPanel = TargetCard.querySelectorAll(`[role = "${TargetTabAriaControl}"]`);
 
@@ -23,7 +20,7 @@ function changePanel(details) {
 
     //It first Hide all the Panel and Render only the Targeted Panel
     HideShowPanel(TargetAllPanel, "none");
-    HideShowPanel(TargetPanel, "flex")
+    HideShowPanel(TargetPanel, "flex");
 
     return 0;
 

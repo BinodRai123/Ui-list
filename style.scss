@@ -115,17 +115,20 @@ main {
     border-radius: var(--border-radius, 10px);
     box-shadow: 0 10px 6px -1px rgba(0, 0, 0, 0.1),
               0 6px 4px -1px rgba(0, 0, 0, 0.107);
+    transition: all linear .2s;
 
     .background-image {
         position: relative;
 
         & .delete-sign {
             position: absolute;
-            top: 1em;
-            right: 1em;
-            height: 20px;
-            width: 20px;
-            background-color: red;
+            top: .2em;
+            right: .3em;
+            font-size: 2rem;
+            transform: scale();
+            color: white;
+            mix-blend-mode: difference;
+            cursor: pointer;
         }
 
         & img {
