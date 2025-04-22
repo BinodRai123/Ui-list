@@ -4,7 +4,7 @@ Tabs.forEach((tab) =>
     tab.addEventListener("click", changePanel)
 )
 
-function changePanel(details) {
+export function changePanel(details) {
     const TargetTab = details.target;
     const TargetTabAriaControl = TargetTab.getAttribute('aria-controls')
     const TargetCard = details.target.closest('.card');
@@ -27,7 +27,7 @@ function changePanel(details) {
 }
 
 //Function to Hide and Showing Panel 
-const HideShowPanel = (panel, display) => {
+function HideShowPanel(panel, display){
     panel.forEach(e => {
         e.style.display = display;
     })

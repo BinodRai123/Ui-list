@@ -23,7 +23,9 @@ users.forEach((data) => {
     content += `
       <div class="card">
             <picture class="background-image delete">
-                        <i class="ri-delete-bin-line delete-sign"></i>
+                    <div class="delete-sign">
+                        <i class="ri-delete-bin-line"></i>
+                    </div>
 
                     <source srcset=${data.image.backgroundImage.avif} type="image/avif"/>
                     <source srcset=${data.image.backgroundImage.webp} type="image/webp"/>
