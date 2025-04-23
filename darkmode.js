@@ -9,7 +9,6 @@ ToggleDiv.addEventListener("click", function(e) {
              icon.style.display = 'block';
              Main.style.backgroundColor = `${icon.getAttribute("aria-valuetext")}`
              ToggleDiv.parentNode.style.backgroundColor = `${icon.getAttribute("aria-valuetext")}`
-             
         }
         else icon.style.display = 'none';
     });

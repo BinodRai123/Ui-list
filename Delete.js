@@ -38,12 +38,12 @@ const AddingCard = () => {
       const Tab = newCard.querySelectorAll(".tab-list_dot");
 
       //using event listener like we did before by importing
-      newDeleteSign.addEventListener("click", deleting);
+      newDeleteSign.addEventListener("click", deleting,{once : true});
       Tab.forEach((Tab) => Tab.addEventListener("click", changePanel));
    }
 };
 
 
-DeleteSigns.forEach((deleteSign) => deleteSign.addEventListener("click", deleting))
+DeleteSigns.forEach((deleteSign) => deleteSign.addEventListener("click", deleting, {once : true}))
 
 AddButton.addEventListener("click", AddingCard);
