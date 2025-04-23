@@ -16,7 +16,7 @@ function escapeHTML(str) {
       };
       return escapeMap[match];
     });
-  }
+}
   
 
 users.forEach((data) => {

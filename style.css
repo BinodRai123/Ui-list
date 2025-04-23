@@ -86,11 +86,13 @@ nav {
 nav .light-mode {
   font-size: 2.5rem;
   cursor: pointer;
+  display: none;
 }
 nav .dark-mode {
   color: white;
   font-size: 2rem;
   cursor: pointer;
+  display: none;
 }
 
 /*-----------------------*/
